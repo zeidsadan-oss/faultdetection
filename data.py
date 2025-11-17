@@ -17,8 +17,8 @@ from sklearn.preprocessing import StandardScaler as skStandardScaler
 
 
 def read_training_data(
-    fault_free_path: str = "/home/ahaboub/fault_detection/faultdetection/TEP_FaultFree_Training.RData",
-    faulty_path: str = "/home/ahaboub/fault_detection/faultdetection/TEP_Faulty_Testing.RData",
+    fault_free_path: str = "/workspace/TEP_FaultFree_Training.RData",
+    faulty_path: str = "/workspace/TEP_Faulty_Testing.RData",
 ):
     """
     Reads the Tennessee Eastman Process (TEP) training or testing data from RData files.
@@ -205,8 +205,8 @@ def load_sampled_data(
     stride: int = 5,
     type_model: str = "supervised",
     use_gpu: bool = True,
-    fault_free_path: str = "/home/ahaboub/fault_detection/faultdetection/TEP_FaultFree_Training.RData",
-    faulty_path: str = "/home/ahaboub/fault_detection/faultdetection/TEP_Faulty_Testing.RData", 
+    fault_free_path: str = "/workspace/TEP_FaultFree_Training.RData",
+    faulty_path: str = "/workspace/TEP_Faulty_Testing.RData", 
     train_end: int | None = None,
     test_start: int | None = None,
     test_end: int | None = None,
